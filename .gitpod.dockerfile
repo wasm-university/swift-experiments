@@ -13,7 +13,7 @@ USER gitpod
 # ------------------------------------
 # Install Swift support
 # ------------------------------------
-RUN brew install swift
+#RUN brew install swift
 # ------------------------------------
 # Install Swift Wasm support
 # ------------------------------------
@@ -23,6 +23,8 @@ ARG SWIFT_WASM_PLATFORM="ubuntu20.04_x86_64"
 RUN wget https://github.com/swiftwasm/swift/releases/download/swift-wasm-${SWIFT_WASM_VERSION}-RELEASE/swift-wasm-${SWIFT_WASM_VERSION}-RELEASE-${SWIFT_WASM_PLATFORM}.tar.gz && \
     tar xzf swift-wasm-${SWIFT_WASM_VERSION}-RELEASE-${SWIFT_WASM_PLATFORM}.tar.gz && \
     rm swift-wasm-${SWIFT_WASM_VERSION}-RELEASE-${SWIFT_WASM_PLATFORM}.tar.gz
+
+RUN brew install swiftwasm/tap/carton
 
 # ------------------------------------
 # Install Wasi Runtimes
