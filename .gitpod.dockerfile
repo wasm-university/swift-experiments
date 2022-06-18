@@ -11,7 +11,11 @@ RUN sudo apt-get install gnupg2 libpython2.7 libz3-dev -y
 USER gitpod
 
 # ------------------------------------
-# Install swift support
+# Install Swift support
+# ------------------------------------
+RUN brew install swift
+# ------------------------------------
+# Install Swift Wasm support
 # ------------------------------------
 ARG SWIFT_WASM_VERSION="5.6.0"
 ARG SWIFT_WASM_PLATFORM="ubuntu20.04_x86_64"

@@ -39,7 +39,7 @@ vscode:
     - pkief.material-icon-theme
     - bungcip.better-toml
     - aaron-bond.better-comments
-
+    - vknabel.vscode-swift-development-environment
 
 
 
