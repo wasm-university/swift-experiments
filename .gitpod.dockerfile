@@ -1,11 +1,11 @@
 FROM gitpod/workspace-full
 
 RUN sudo apt-get update && \
-    sudo apt-get install gettext libncurses5 libxkbcommon0 libtinfo5
+    sudo apt-get install gettext libncurses5 libxkbcommon0 libtinfo5 -y
 
 # Ubuntu 20.04 (Swift)
 # https://book.swiftwasm.org/getting-started/setup.html
-RUN sudo apt-get install gnupg2 libpython2.7 libz3-dev
+RUN sudo apt-get install gnupg2 libpython2.7 libz3-dev -y
 
 
 USER gitpod
