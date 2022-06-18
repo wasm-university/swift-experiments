@@ -2,8 +2,6 @@
   "recommendations": [
     "pkief.material-icon-theme",
     "bungcip.better-toml",
-    "aaron-bond.better-comments",
-    "grain-lang.vscode-grain",
-    "znck.grammarly"
+    "aaron-bond.better-comments"
   ]
 }
