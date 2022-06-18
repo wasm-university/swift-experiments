@@ -20,6 +20,15 @@ tasks:
       source /home/gitpod/.wasmedge/env 
       wasmedge --version
 
+      # ------------------------------------
+      # Swift Wasm toolchain
+      # ------------------------------------
+      sudo echo "" >> $HOME/.bashrc
+      sudo echo 'export SWIFT_WASM_HOME="swift-wasm-5.6.0-RELEASE"' >> $HOME/.bashrc
+      sudo echo "" >> $HOME/.bashrc
+      sudo echo 'export PATH=$HOME/${SWIFT_WASM_HOME}/usr/bin:"${PATH}"' >> $HOME/.bashrc
+      source $HOME/.bashrc
+
 
     init: |
       echo "🚀 init"

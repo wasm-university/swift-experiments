@@ -17,10 +17,8 @@ ARG SWIFT_WASM_VERSION="5.6.0"
 ARG SWIFT_WASM_PLATFORM="ubuntu20.04_x86_64"
 
 RUN wget https://github.com/swiftwasm/swift/releases/download/swift-wasm-${SWIFT_WASM_VERSION}-RELEASE/swift-wasm-${SWIFT_WASM_VERSION}-RELEASE-${SWIFT_WASM_PLATFORM}.tar.gz && \
-    tar xzf swift-wasm-${SWIFT_WASM_VERSION}-RELEASE-${SWIFT_WASM_PLATFORM}.tar.gz
-
-#sudo cp -R swift-wasm-${SWIFT_WASM_VERSION}-RELEASE /usr/local/bin/swift
-# export PATH=$(pwd)/usr/bin:"${PATH}"
+    tar xzf swift-wasm-${SWIFT_WASM_VERSION}-RELEASE-${SWIFT_WASM_PLATFORM}.tar.gz && \
+    rm swift-wasm-${SWIFT_WASM_VERSION}-RELEASE-${SWIFT_WASM_PLATFORM}.tar.gz
 
 # ------------------------------------
 # Install Wasi Runtimes
